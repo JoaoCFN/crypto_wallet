@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :mining_types
   get('welcome/index', to: 'welcome#index')
   get('welcome/json', to: 'welcome#hello_world_json')
 
