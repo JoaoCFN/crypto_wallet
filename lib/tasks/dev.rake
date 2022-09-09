@@ -14,8 +14,8 @@ namespace :dev do
         %x(rails db:migrate)
       end
 
-      %x(rails dev:add_coins)
       %x(rails dev:add_mining_types)
+      %x(rails dev:add_coins)
     else
       puts "Você não está em ambiente de desenvolvimento"
     end
@@ -28,27 +28,32 @@ namespace :dev do
         {
           description: "Bitcoin",
           acronym: "BTC",
-          url_image: "https://seeklogo.com/images/B/bitcoin-logo-DDAEEA68FA-seeklogo.com.png"
+          url_image: "https://seeklogo.com/images/B/bitcoin-logo-DDAEEA68FA-seeklogo.com.png",
+          mining_type: MiningType.find_by(acronym: 'PoW')
         },
         {
           description: "Ethereum",
           acronym: "ETC",
-          url_image: "https://marcas-logos.net/wp-content/uploads/2020/03/ETHEREUM-LOGO.png"
+          url_image: "https://marcas-logos.net/wp-content/uploads/2020/03/ETHEREUM-LOGO.png",
+          mining_type: MiningType.all.sample
         },
         {
           description: "Dash",
           acronym: "DASH",
-          url_image: "https://seeklogo.com/images/D/dash-logo-4A14989CF5-seeklogo.com.png"
+          url_image: "https://seeklogo.com/images/D/dash-logo-4A14989CF5-seeklogo.com.png",
+          mining_type: MiningType.all.sample
         },
         {
           description: "Iota",
           acronym: "IOT",
-          url_image: "https://s2.coinmarketcap.com/static/img/coins/200x200/1720.png"
+          url_image: "https://s2.coinmarketcap.com/static/img/coins/200x200/1720.png",
+          mining_type: MiningType.all.sample
         },
         {
           description: "ZCash",
           acronym: "ZEC",
-          url_image: "https://s2.coinmarketcap.com/static/img/coins/200x200/1437.png"
+          url_image: "https://s2.coinmarketcap.com/static/img/coins/200x200/1437.png",
+          mining_type: MiningType.all.sample
         }
       ]
   
