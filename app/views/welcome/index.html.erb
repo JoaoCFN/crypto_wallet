@@ -1,9 +1,20 @@
+<p>
+    <%= link_to 'Português', root_path(locale: 'pt-BR') %>
+</p>
+<p>
+    <%= link_to 'English', root_path(locale: 'en') %>
+</p>
+
 <h1>Seja Bem-vindo!</h1>
-<p>João Carlos Ferreira Neto</p>
+<p>
+    O idioma utilizado nessa aplicação é: 
+    <strong><%= I18n.t('current_locale') %></strong>
+</p>
 <p>
     <strong>A data de hoje é</strong>
-    <%= date_from_brazil(Date.today()) %>
+    <%= I18n.l(Date.today()) %>
 </p>
+<p><%= I18n.t('hello') %></p>
 
 <%= render "menu" %>
 
