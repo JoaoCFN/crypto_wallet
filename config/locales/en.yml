@@ -30,9 +30,15 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
+  welcome: "Welcome!"
+  messages:
+    welcome: "This is a Crypto Wallet. An app where you can create e view yours coins."
+    menu: "To start, choose an option below:"
+    confirm: "Are you sure?"
   current_locale: "English (Internacional)"
   hello: "Hello world"
   links:
+    new: "New"
     edit: "Edit"
     show: "Show"
     delete: "Delete"

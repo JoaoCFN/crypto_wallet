@@ -1,30 +1,7 @@
-<p>
-    <%= link_to 'Português', root_path(locale: 'pt-BR') %>
-</p>
-<p>
-    <%= link_to 'English', root_path(locale: 'en') %>
-</p>
-
-<h1>Seja Bem-vindo!</h1>
-<p>
-    O idioma utilizado nessa aplicação é: 
-    <strong><%= I18n.t('current_locale') %></strong>
-</p>
-<p>
-    <strong>A data de hoje é</strong>
-    <%= I18n.l(Date.today()) %>
-</p>
-<p><%= I18n.t('hello') %></p>
-
-<%= render "menu" %>
-
-<p>
-    Você está em ambiente de 
-    <strong>
-        <%= rails_env %>
-    </strong>
-</p>
-
-<p>
-    <%= @nome %>
-</p>
+<div class="jumbotron">
+    <h1 class="display-3"><%= t('welcome') %></h1>
+    <p class="lead"><%= t('messages.welcome') %></p>
+    <hr class="my-2">
+    <p><%= t('messages.menu') %></p>
+    <%= render "menu" %>
+</div>
