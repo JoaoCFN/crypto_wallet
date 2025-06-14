@@ -1,24 +1,9 @@
-# README
+#  Estudos Ruby on Rails
+ 
+## :closed_book: Sobre 
+ ### Este é um repositório de estudos
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## :mortar_board: Estudos
+ ###  Repositório de estudos de Ruby e Ruby on Rails
+ 
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
